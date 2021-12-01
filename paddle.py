@@ -4,12 +4,6 @@ WIDTH = 20
 HEIGHT = 100
 
 
-# X_POS = 350
-# Y_POS = 0
-
-
-# x_cor, y_cor
-
 class Paddle(Turtle):
     def __init__(self, x_cor, y_cor):
         super().__init__()
@@ -40,13 +34,3 @@ class Paddle(Turtle):
         self.goto(-350, self.pad_pos)
 
 
-class Ball(Turtle):
-    def __init__(self):
-        super().__init__()
-        self.shape('circle')
-        self.color('blue')
-        self.goto(0, 0)
-
-    def move_ball(self):
-        self.seth(45)
-        self.forward(20)
